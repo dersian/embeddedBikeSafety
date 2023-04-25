@@ -315,7 +315,7 @@
     (stroke (width 0.127) (type solid)) (layer "F.Fab") (tstamp fd282e55-dbbc-49d1-8d23-8caf8f50c75b))
   (fp_circle (center -1.9805 -1.355) (end -1.8805 -1.355)
     (stroke (width 0.2) (type solid)) (fill none) (layer "F.Fab") (tstamp d7ac333d-d079-4556-acfe-26c54ba795b7))
-  (pad "" np_thru_hole circle (at 0 0.71) (size 0.6 0.6) (drill 0.6) (layers "*.Cu" "*.Mask") (tstamp 3f13ea01-6862-4541-bde2-feb82d3342c1))
+  (pad "" np_thru_hole circle (at 0 0.71) (size 0.8 0.8) (drill 0.6) (layers "F&B.Cu" "*.Mask") (tstamp 3f13ea01-6862-4541-bde2-feb82d3342c1))
   (pad "1" smd rect (at -0.8375 -1.364) (size 0.725 0.522) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 7853358a-ab12-4080-8c01-9bb836c22c4f))
   (pad "2" smd rect (at -0.8375 -0.542) (size 0.725 0.522) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp e2c625c1-1fd6-479c-99a7-e0c0e665b36e))
   (pad "3" smd custom (at 0 1.3725) (size 0.1 0.1) (layers "F.Cu")
