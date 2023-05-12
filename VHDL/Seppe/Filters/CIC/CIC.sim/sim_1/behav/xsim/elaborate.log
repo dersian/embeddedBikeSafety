@@ -1,0 +1,67 @@
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 5ecb9955c9514dffaaf67ae7a0ec9cd5 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L cic_compiler_v4_0_15 -L secureip -L xpm --snapshot mainTop_tb_behav xil_defaultlib.mainTop_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling package cic_compiler_v4_0_15.cic_compiler_v4_0_15_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.math_real
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package unisim.vcomponents
+Compiling package cic_compiler_v4_0_15.toolbox_pkg
+Compiling package cic_compiler_v4_0_15.cic_compiler_v4_0_15_pkg
+Compiling package cic_compiler_v4_0_15.cic_compiler_v4_0_15_hdl_comps
+Compiling package axi_utils_v2_0_6.global_util_pkg
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=1,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay_bit [\delay_bit(delay_len=0,family=(p...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay_bit [\delay_bit(delay_len=2,family=(p...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=1,family=(p_dsp...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,dreg=0,inmodere...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.emb_calc [\emb_calc(param=((p_dsp48e1,fals...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay_bit [\delay_bit(delay_len=0,family=(p...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=2,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay_bit [\delay_bit(delay_len=5,family=(p...]
+Compiling architecture synth of entity cic_compiler_v4_0_15.int_comb_stage_folded [\int_comb_stage_folded(c_int_or_...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.emb_calc [\emb_calc(param=((p_dsp48e1,fals...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay_bit [\delay_bit(delay_len=1,family=(p...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay_bit [\delay_bit(delay_len=3,family=(p...]
+Compiling architecture synth of entity cic_compiler_v4_0_15.int_comb_stage_unfolded [\int_comb_stage_unfolded(c_int_o...]
+Compiling architecture synth of entity cic_compiler_v4_0_15.int_comb_section [\int_comb_section(c_int_or_comb=...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.emb_calc [\emb_calc(param=((p_dsp48e1,fals...]
+Compiling architecture synth of entity cic_compiler_v4_0_15.int_comb_stage_unfolded [\int_comb_stage_unfolded(c_int_o...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.emb_calc [\emb_calc(param=((p_dsp48e1,fals...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture synth of entity cic_compiler_v4_0_15.int_comb_stage_unfolded [\int_comb_stage_unfolded(c_int_o...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.emb_calc [\emb_calc(param=((p_dsp48e1,fals...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture synth of entity cic_compiler_v4_0_15.int_comb_stage_unfolded [\int_comb_stage_unfolded(c_int_o...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.emb_calc [\emb_calc(param=((p_dsp48e1,fals...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture synth of entity cic_compiler_v4_0_15.int_comb_stage_unfolded [\int_comb_stage_unfolded(c_int_o...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.emb_calc [\emb_calc(param=((p_dsp48e1,fals...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture synth of entity cic_compiler_v4_0_15.int_comb_stage_unfolded [\int_comb_stage_unfolded(c_int_o...]
+Compiling architecture synth of entity cic_compiler_v4_0_15.int_comb_section [\int_comb_section(c_int_or_comb=...]
+Compiling architecture synth of entity cic_compiler_v4_0_15.interpolate [\interpolate(c_num_stages=5,c_in...]
+Compiling architecture synth of entity cic_compiler_v4_0_15.cic_compiler_v4_0_15_viv [\cic_compiler_v4_0_15_viv(c_comp...]
+Compiling architecture xilinx of entity cic_compiler_v4_0_15.cic_compiler_v4_0_15 [\cic_compiler_v4_0_15(c_componen...]
+Compiling architecture cic_compiler_0_arch of entity xil_defaultlib.cic_compiler_0 [cic_compiler_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.mainTop [maintop_default]
+Compiling architecture behavioral of entity xil_defaultlib.maintop_tb
+Built simulation snapshot mainTop_tb_behav
