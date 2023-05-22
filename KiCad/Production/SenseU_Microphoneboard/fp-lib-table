@@ -1,4 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "SenseU_Microphoneboard")(type "KiCad")(uri "C:/Users/benoo/OneDrive/Documents/Embedded_DSP/embeddedBikeSafety/KiCad/Production/SenseU_Microphoneboard.pretty")(options "")(descr ""))
-)
