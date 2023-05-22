@@ -1,0 +1,48 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid c15b751b-87a4-4d4e-aac0-7b5a75057e49)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 175.26 66.04) (size 39.37 26.67) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 08f64b92-ddeb-46a9-a410-79b61cc0149f)
+    (property "Sheetname" "Pmod_connection" (at 175.26 65.3284 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Pmod_connection.kicad_sch" (at 175.26 93.2946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "SenseU_Microphoneboard"
+        (path "/c15b751b-87a4-4d4e-aac0-7b5a75057e49" (page "4"))
+      )
+    )
+  )
+
+  (sheet (at 80.01 71.12) (size 38.1 19.05) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 50bc3029-337a-4bf1-8805-983cf4d634e0)
+    (property "Sheetname" "PDM_microphone_array" (at 80.01 70.4084 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "PDM_microphone_array.kicad_sch" (at 80.01 90.7546 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "SenseU_Microphoneboard"
+        (path "/c15b751b-87a4-4d4e-aac0-7b5a75057e49" (page "3"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

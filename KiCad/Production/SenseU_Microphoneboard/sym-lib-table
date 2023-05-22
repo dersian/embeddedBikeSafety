@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "SensU_Microphone_parts")(type "KiCad")(uri "${KIPRJMOD}/SensU_Microphone_parts.kicad_sym")(options "")(descr ""))
+)
