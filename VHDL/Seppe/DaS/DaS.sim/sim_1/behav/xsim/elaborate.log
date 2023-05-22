@@ -1,0 +1,18 @@
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto ea260d145f6e46939c5cf3c482ef8197 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot DaS_tb_behav xil_defaultlib.DaS_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.types
+Compiling architecture behavioral of entity xil_defaultlib.DaS [das_default]
+Compiling architecture behavioral of entity xil_defaultlib.das_tb
+Built simulation snapshot DaS_tb_behav

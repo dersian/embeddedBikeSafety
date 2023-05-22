@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 21576127810154968
+=======
+21574440894014884
+>>>>>>> 4d248196da906d0aa59d84badeca956cc494f05c
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -82942,6 +82946,7 @@ SPH0655LM4H-1
 0
 5
 5
+<<<<<<< HEAD
 SenseU_Microphoneboard
 SPU0410LR5H_QB
 
@@ -82949,6 +82954,8 @@ SPU0410LR5H_QB
 0
 6
 6
+=======
+>>>>>>> 4d248196da906d0aa59d84badeca956cc494f05c
 Sensor
 Aosong_DHT11_5.5x12.0_P2.54mm
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/DHT11.pdf

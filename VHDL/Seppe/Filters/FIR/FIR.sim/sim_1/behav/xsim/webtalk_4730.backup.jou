@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Apr 11 11:39:07 2023
+# Process ID: 4730
+# Current directory: /home/indi/Documents/EDSP/Filters/FIR/FIR.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/indi/Documents/EDSP/Filters/FIR/FIR.sim/sim_1/behav/xsim/xsim.dir/mainTop_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/indi/Documents/EDSP/Filters/FIR/FIR.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/indi/Documents/EDSP/Filters/FIR/FIR.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/indi/Documents/EDSP/Filters/FIR/FIR.sim/sim_1/behav/xsim/xsim.dir/mainTop_tb_behav/webtalk/xsim_webtalk.tcl -notrace

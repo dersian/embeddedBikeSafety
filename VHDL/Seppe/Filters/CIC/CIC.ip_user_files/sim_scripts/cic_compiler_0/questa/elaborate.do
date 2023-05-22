@@ -1,0 +1,1 @@
+vopt -64 +acc=npr -l elaborate.log -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L cic_compiler_v4_0_15 -L secureip -work xil_defaultlib xil_defaultlib.cic_compiler_0 -o cic_compiler_0_opt
