@@ -528,6 +528,9 @@
     (path "/bdd1c018-ef1f-4016-b07d-24e58036b989/e9b7a4d2-1225-408a-a027-46402aecb0da"
       (reference "J?") (unit 1) (value "JS2 XH 2.5") (footprint "")
     )
+    (path "/ddc576b0-3284-4c3a-afde-80cb4dd34e8a/f008032c-65a9-4972-9713-5e6e12709554"
+      (reference "J?") (unit 3) (value "1717254-4") (footprint "TE_1717254-4")
+    )
     (path "/bdd1c018-ef1f-4016-b07d-24e58036b989/1b422cb0-8c8b-4422-888d-63f5cec0f277"
       (reference "L?") (unit 1) (value "1.5µH") (footprint "")
     )
