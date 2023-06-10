@@ -483,6 +483,10 @@
     [
       "25a7bd83-bec9-4f3f-8272-59937481b0db",
       "MCU & Comms"
+    ],
+    [
+      "21567c23-4b19-440e-b334-053946d84a03",
+      "MicroController"
     ]
   ],
   "text_variables": {}

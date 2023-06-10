@@ -1956,7 +1956,7 @@
       )
       (project "DisplayU_Sisterboard"
         (path "/19c7c935-33c8-4c59-9a5d-d605e15c31a3/bc90aa39-2744-4a84-88b0-6b5f6472e99d"
-          (reference "U6") (unit 1)
+          (reference "U4") (unit 1)
         )
       )
     )
@@ -2255,7 +2255,7 @@
       )
       (project "DisplayU_Sisterboard"
         (path "/19c7c935-33c8-4c59-9a5d-d605e15c31a3/bc90aa39-2744-4a84-88b0-6b5f6472e99d"
-          (reference "U5") (unit 1)
+          (reference "U3") (unit 1)
         )
       )
     )
@@ -2536,10 +2536,10 @@
   (symbol (lib_id "Device:L") (at 265.43 118.745 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 650ddcee-c991-4aef-a9b1-a7cc72b966c4)
-    (property "Reference" "L?" (at 265.43 114.5372 90)
+    (property "Reference" "L?" (at 265.43 114.5754 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "1.5µH" (at 265.43 117.0741 90)
+    (property "Value" "1.5µH" (at 265.43 117.0806 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 265.43 118.745 0)
@@ -2558,7 +2558,7 @@
       )
       (project "DisplayU_Sisterboard"
         (path "/19c7c935-33c8-4c59-9a5d-d605e15c31a3/bc90aa39-2744-4a84-88b0-6b5f6472e99d"
-          (reference "L2") (unit 1)
+          (reference "L5") (unit 1)
         )
       )
     )
@@ -2665,10 +2665,10 @@
   (symbol (lib_id "Regulator_Linear:AZ1117-3.3") (at 62.865 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 808b73ee-41c9-4d98-8bd4-e9c8fac4d7d0)
-    (property "Reference" "U?" (at 62.865 103.6152 0)
+    (property "Reference" "U?" (at 62.865 103.6508 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "AZ1117-3.3" (at 62.865 106.1521 0)
+    (property "Value" "AZ1117-3.3" (at 62.865 106.156 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 62.865 102.87 0)
@@ -2697,7 +2697,7 @@
       )
       (project "DisplayU_Sisterboard"
         (path "/19c7c935-33c8-4c59-9a5d-d605e15c31a3/bc90aa39-2744-4a84-88b0-6b5f6472e99d"
-          (reference "U4") (unit 1)
+          (reference "U2") (unit 1)
         )
       )
     )
