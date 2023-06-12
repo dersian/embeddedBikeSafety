@@ -604,7 +604,7 @@
     (property "Reference" "J2" (at 217.17 102.4636 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "USB-C USB 2.0 MC-372" (at 217.17 104.775 0)
+    (property "Value" "USB4105-GF-A\n" (at 217.17 104.775 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "VUBRacing_ELO:USB C 2.0 MC 772" (at 219.8878 104.775 0)
