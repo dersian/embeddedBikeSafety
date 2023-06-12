@@ -338,6 +338,14 @@
     [
       "a2b21339-ce3c-44b1-a2ba-15ee8860d8fb",
       "MicroController"
+    ],
+    [
+      "fb835e06-d907-4f71-88e6-a872b0f9d18c",
+      "Pmod"
+    ],
+    [
+      "9ef32191-34e4-4a53-ad42-a06e30e61bd2",
+      "FPGA"
     ]
   ],
   "text_variables": {}
