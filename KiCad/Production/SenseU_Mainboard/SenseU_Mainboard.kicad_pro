@@ -322,6 +322,31 @@
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "43872b54-cf9c-4c7b-870d-631baccef0c0",
+      ""
+    ],
+    [
+      "19a6c197-7c63-4043-b240-1314a2f063a4",
+      "Power"
+    ],
+    [
+      "915563dd-e56c-42ce-a954-58d654408565",
+      "MCU & Comms"
+    ],
+    [
+      "a2b21339-ce3c-44b1-a2ba-15ee8860d8fb",
+      "MicroController"
+    ],
+    [
+      "fb835e06-d907-4f71-88e6-a872b0f9d18c",
+      "Pmod"
+    ],
+    [
+      "9ef32191-34e4-4a53-ad42-a06e30e61bd2",
+      "FPGA"
+    ]
+  ],
   "text_variables": {}
 }
