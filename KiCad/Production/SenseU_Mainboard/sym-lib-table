@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "2023-06-17_18-13-39")(type "KiCad")(uri "D:/documents/KiCad/libs/pmod header/KiCADv6/2023-06-17_18-13-39.kicad_sym")(options "")(descr ""))
+  (lib (name "CH340")(type "KiCad")(uri "D:/documents/KiCad/libs/ch340/CH340.kicad_sym")(options "")(descr ""))
+)

@@ -346,6 +346,10 @@
     [
       "9ef32191-34e4-4a53-ad42-a06e30e61bd2",
       "FPGA"
+    ],
+    [
+      "d8d785fb-fd90-4cd9-a47e-213577f6aaa3",
+      "USB to UART"
     ]
   ],
   "text_variables": {}
