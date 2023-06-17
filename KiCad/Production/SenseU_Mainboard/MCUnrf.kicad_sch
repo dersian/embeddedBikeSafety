@@ -683,7 +683,7 @@
       )
       (project "SenseU_Mainboard"
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/915563dd-e56c-42ce-a954-58d654408565"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
     )
@@ -711,7 +711,7 @@
           (reference "#PWR073") (unit 1)
         )
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/915563dd-e56c-42ce-a954-58d654408565"
-          (reference "#PWR066") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -744,7 +744,7 @@
       )
       (project "SenseU_Mainboard"
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/915563dd-e56c-42ce-a954-58d654408565"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -803,7 +803,7 @@
           (reference "C20") (unit 1)
         )
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/915563dd-e56c-42ce-a954-58d654408565"
-          (reference "C21") (unit 1)
+          (reference "C5") (unit 1)
         )
       )
     )
@@ -832,7 +832,7 @@
           (reference "C19") (unit 1)
         )
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/915563dd-e56c-42ce-a954-58d654408565"
-          (reference "C22") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
     )
@@ -932,7 +932,7 @@
           (reference "#PWR071") (unit 1)
         )
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/915563dd-e56c-42ce-a954-58d654408565"
-          (reference "#PWR068") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -992,7 +992,7 @@
       )
       (project "SenseU_Mainboard"
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/915563dd-e56c-42ce-a954-58d654408565"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
       (project "nrfmicro"
@@ -1046,7 +1046,7 @@
           (reference "U4") (unit 1)
         )
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/915563dd-e56c-42ce-a954-58d654408565"
-          (reference "U5") (unit 1)
+          (reference "U3") (unit 1)
         )
       )
     )
@@ -1074,7 +1074,7 @@
           (reference "#PWR072") (unit 1)
         )
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/915563dd-e56c-42ce-a954-58d654408565"
-          (reference "#PWR067") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
     )

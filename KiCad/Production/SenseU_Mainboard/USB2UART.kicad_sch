@@ -1,6 +1,6 @@
 (kicad_sch (version 20230121) (generator eeschema)
 
-  (uuid d3f41c4a-2c86-4c08-bcdb-88bad3feab4c)
+  (uuid f9bc6015-4929-442a-bf64-5669b321c819)
 
   (paper "A4")
 
@@ -243,7 +243,7 @@
   (symbol (lib_id "CH340:COM-16278") (at 109.22 129.54 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0b45f974-c1a0-4d0e-89ff-00645282aafb)
-    (property "Reference" "U4" (at 109.22 110.998 0)
+    (property "Reference" "U5" (at 109.22 110.998 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "COM-16278" (at 109.22 113.538 0)
@@ -280,7 +280,7 @@
     (instances
       (project "SenseU_Mainboard"
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/d8d785fb-fd90-4cd9-a47e-213577f6aaa3"
-          (reference "U4") (unit 1)
+          (reference "U5") (unit 1)
         )
       )
     )
@@ -289,7 +289,7 @@
   (symbol (lib_id "power:GND") (at 127 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 17af26f4-d67e-48e0-aa75-6488e90e43ca)
-    (property "Reference" "#PWR073" (at 127 151.13 0)
+    (property "Reference" "#PWR069" (at 127 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 127 149.86 0)
@@ -305,7 +305,7 @@
     (instances
       (project "SenseU_Mainboard"
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/d8d785fb-fd90-4cd9-a47e-213577f6aaa3"
-          (reference "#PWR073") (unit 1)
+          (reference "#PWR069") (unit 1)
         )
       )
     )
@@ -314,7 +314,7 @@
   (symbol (lib_id "Device:C") (at 149.86 120.65 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6d996281-9077-4acf-8c29-12b245bb384b)
-    (property "Reference" "C19" (at 153.67 120.015 0)
+    (property "Reference" "C22" (at 153.67 120.015 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "C" (at 153.67 122.555 0)
@@ -331,7 +331,7 @@
     (instances
       (project "SenseU_Mainboard"
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/d8d785fb-fd90-4cd9-a47e-213577f6aaa3"
-          (reference "C19") (unit 1)
+          (reference "C22") (unit 1)
         )
       )
     )
@@ -365,7 +365,7 @@
   (symbol (lib_id "power:GND") (at 139.7 127 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cc627251-f3e9-45ff-a814-b426ac4d2e5e)
-    (property "Reference" "#PWR072" (at 139.7 133.35 0)
+    (property "Reference" "#PWR070" (at 139.7 133.35 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 139.7 132.08 0)
@@ -381,7 +381,7 @@
     (instances
       (project "SenseU_Mainboard"
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/d8d785fb-fd90-4cd9-a47e-213577f6aaa3"
-          (reference "#PWR072") (unit 1)
+          (reference "#PWR070") (unit 1)
         )
       )
     )
@@ -390,7 +390,7 @@
   (symbol (lib_id "Device:C") (at 139.7 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d45480bd-65b0-4689-bc3c-f6de071fc416)
-    (property "Reference" "C20" (at 143.51 122.555 0)
+    (property "Reference" "C21" (at 143.51 122.555 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "C" (at 143.51 125.095 0)
@@ -407,7 +407,7 @@
     (instances
       (project "SenseU_Mainboard"
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/d8d785fb-fd90-4cd9-a47e-213577f6aaa3"
-          (reference "C20") (unit 1)
+          (reference "C21") (unit 1)
         )
       )
     )

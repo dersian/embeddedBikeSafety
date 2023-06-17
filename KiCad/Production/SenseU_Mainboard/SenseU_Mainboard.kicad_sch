@@ -662,7 +662,7 @@
       )
       (project "SenseU_Mainboard"
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
       (project "nrfmicro"
@@ -705,7 +705,7 @@
       )
       (project "SenseU_Mainboard"
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -743,7 +743,7 @@
       )
       (project "SenseU_Mainboard"
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -861,7 +861,7 @@
       )
       (project "SenseU_Mainboard"
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR01") (unit 1)
         )
       )
     )
@@ -966,7 +966,7 @@
       )
       (project "SenseU_Mainboard"
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
       (project "nrfmicro"
