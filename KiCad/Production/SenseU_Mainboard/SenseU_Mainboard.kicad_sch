@@ -688,7 +688,7 @@
     (property "Datasheet" "" (at 89.789 106.553 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7d09b90a-2a36-48b7-a158-f0669fbc6573))
+    (pin "1" (uuid d024798a-1875-42f9-aad0-8b89db434589))
     (instances
       (project "EBS_Main"
         (path "/0a240a99-769c-44e4-a1cf-c8ae622a9801/bdd1c018-ef1f-4016-b07d-24e58036b989"
@@ -758,7 +758,7 @@
     (property "Value" "USB-C USB 2.0 MC-372" (at 89.789 64.008 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "VUBRacing_ELO:USB C 2.0 MC 772" (at 92.5068 64.008 0)
+    (property "Footprint" "USB_C:GCT_USB4105-GF-A" (at 92.5068 64.008 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (at 93.599 83.693 0)
@@ -912,7 +912,7 @@
     (property "Value" "10uF" (at 70.485 96.8252 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 68.5292 98.933 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 68.5292 98.933 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 67.564 95.123 0)
@@ -1007,23 +1007,6 @@
     (instances
       (project "SenseU_Mainboard"
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0" (page "3"))
-      )
-    )
-  )
-
-  (sheet (at 159.258 111.506) (size 25.4 26.924) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid d8d785fb-fd90-4cd9-a47e-213577f6aaa3)
-    (property "Sheetname" "USB to UART" (at 159.258 110.7944 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "USB2UART.kicad_sch" (at 159.258 139.0146 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (instances
-      (project "SenseU_Mainboard"
-        (path "/43872b54-cf9c-4c7b-870d-631baccef0c0" (page "7"))
       )
     )
   )

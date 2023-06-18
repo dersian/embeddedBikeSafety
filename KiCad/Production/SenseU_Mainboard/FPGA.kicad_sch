@@ -1628,7 +1628,7 @@
     (property "Value" "1717254-4" (at 122.682 37.338 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "TE_1717254-4" (at 122.682 91.186 0)
+    (property "Footprint" "Dimm200:TE_1717254-4" (at 122.682 91.186 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
     (property "Datasheet" "" (at 122.682 91.186 0)
@@ -1910,7 +1910,7 @@
     (property "Value" "1717254-4" (at 176.53 36.83 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "TE_1717254-4" (at 176.53 93.472 0)
+    (property "Footprint" "Dimm200:TE_1717254-4" (at 176.53 93.472 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
     (property "Datasheet" "" (at 176.53 93.472 0)
@@ -2462,7 +2462,7 @@
     (property "Datasheet" "" (at 59.944 34.798 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid aaa7d890-3bfe-42c1-bb64-49495074b257))
+    (pin "1" (uuid 8c717860-bfe4-45b1-b200-66ca19dff084))
     (instances
       (project "DisplayU_Sisterboard"
         (path "/19c7c935-33c8-4c59-9a5d-d605e15c31a3/25a7bd83-bec9-4f3f-8272-59937481b0db/21567c23-4b19-440e-b334-053946d84a03"
@@ -2591,7 +2591,7 @@
     (property "Value" "1717254-4" (at 54.864 72.39 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "TE_1717254-4" (at 54.864 100.838 0)
+    (property "Footprint" "Dimm200:TE_1717254-4" (at 54.864 100.838 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
     (property "Datasheet" "" (at 54.864 100.838 0)

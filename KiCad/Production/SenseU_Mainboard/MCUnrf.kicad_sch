@@ -707,9 +707,6 @@
     (pin "1" (uuid 3b82b1d9-7d73-4492-8d97-1686c1bf11d3))
     (instances
       (project "SenseU_Mainboard"
-        (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/d8d785fb-fd90-4cd9-a47e-213577f6aaa3"
-          (reference "#PWR073") (unit 1)
-        )
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/915563dd-e56c-42ce-a954-58d654408565"
           (reference "#PWR015") (unit 1)
         )
@@ -786,10 +783,10 @@
     (property "Reference" "C20" (at 259.08 45.847 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "C" (at 259.08 48.387 0)
+    (property "Value" "100n" (at 259.08 48.387 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 256.2352 50.292 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 256.2352 50.292 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 255.27 46.482 0)
@@ -799,9 +796,6 @@
     (pin "2" (uuid 59de4211-c8e9-4d4d-9aa9-238d76fe2be0))
     (instances
       (project "SenseU_Mainboard"
-        (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/d8d785fb-fd90-4cd9-a47e-213577f6aaa3"
-          (reference "C20") (unit 1)
-        )
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/915563dd-e56c-42ce-a954-58d654408565"
           (reference "C5") (unit 1)
         )
@@ -815,10 +809,10 @@
     (property "Reference" "C19" (at 269.24 43.307 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "C" (at 269.24 45.847 0)
+    (property "Value" "100n" (at 269.24 45.847 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 266.3952 47.752 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 266.3952 47.752 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 265.43 43.942 0)
@@ -828,9 +822,6 @@
     (pin "2" (uuid 7b418937-7bb2-45de-b1de-9c52d174f573))
     (instances
       (project "SenseU_Mainboard"
-        (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/d8d785fb-fd90-4cd9-a47e-213577f6aaa3"
-          (reference "C19") (unit 1)
-        )
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/915563dd-e56c-42ce-a954-58d654408565"
           (reference "C6") (unit 1)
         )
@@ -928,9 +919,6 @@
     (pin "1" (uuid 68192a79-db46-4755-be3e-9a178fb7ca16))
     (instances
       (project "SenseU_Mainboard"
-        (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/d8d785fb-fd90-4cd9-a47e-213577f6aaa3"
-          (reference "#PWR071") (unit 1)
-        )
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/915563dd-e56c-42ce-a954-58d654408565"
           (reference "#PWR017") (unit 1)
         )
@@ -1012,7 +1000,7 @@
     (property "Value" "COM-16278" (at 224.79 36.83 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "SOP50P490X120-10N" (at 224.79 52.832 0)
+    (property "Footprint" "CH340:SOP50P490X120-10N" (at 224.79 52.832 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
     (property "Datasheet" "" (at 224.79 52.832 0)
@@ -1042,9 +1030,6 @@
     (pin "9" (uuid 38e064e2-241c-4b26-83fa-1d8b659a063c))
     (instances
       (project "SenseU_Mainboard"
-        (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/d8d785fb-fd90-4cd9-a47e-213577f6aaa3"
-          (reference "U4") (unit 1)
-        )
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/915563dd-e56c-42ce-a954-58d654408565"
           (reference "U3") (unit 1)
         )
@@ -1070,9 +1055,6 @@
     (pin "1" (uuid 4c4bfa05-faa3-4746-b094-3263409edb3e))
     (instances
       (project "SenseU_Mainboard"
-        (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/d8d785fb-fd90-4cd9-a47e-213577f6aaa3"
-          (reference "#PWR072") (unit 1)
-        )
         (path "/43872b54-cf9c-4c7b-870d-631baccef0c0/915563dd-e56c-42ce-a954-58d654408565"
           (reference "#PWR016") (unit 1)
         )
