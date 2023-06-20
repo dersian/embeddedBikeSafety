@@ -1,0 +1,35 @@
+file_type: "ARRAY_CONFIGURATION"
+
+microphones: 
+  - id: 1
+    location: [0.06,0,0]
+    type: "SPH0641LU4H-1"
+    delay: 0
+
+  - id: 2
+    location: [0.042426,0.042426,0]
+    type: "SPH0641LU4H-1"
+    delay: 0
+
+  - id: 3
+    location: [0,0.06,0]
+    type: "SPH0641LU4H-1"
+    delay: 0
+
+  - id: 4
+    location: [-0.042426,0.042426,0]
+    type: "SPH0641LU4H-1"
+    delay: 0
+
+  - id: 5
+    location: [-0.06,0,0]
+    type: "SPH0641LU4H-1"
+    delay: 0
+
+subarrays: 
+  - id: 1
+    microphone_ids: [1,2,3,4,5]
+    is_active: true
+
+
+

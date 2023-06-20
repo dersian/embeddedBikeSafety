@@ -1,0 +1,15 @@
+file_type: "SIMULATION_CONFIGURATION"
+
+project_name: eDSP_9
+simulation_type: "RESPONSE"
+array_file: "eDSP_9.array.yaml"
+array_dsp_file: "eDSP.dsp.yaml"
+sound_sources_file: "eDSP.source.yaml"
+simulation: 
+    start_time: 
+        days: 0
+        seconds: 0.0000000
+    end_time:
+        days: 0
+        seconds: 0.100000000
+metrics_requested: true

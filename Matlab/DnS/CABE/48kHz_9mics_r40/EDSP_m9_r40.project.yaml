@@ -1,0 +1,31 @@
+file_type: OUTPUT_PROJECT
+
+# Project name
+project_name: EDSP_m9_r40
+
+# Project input files
+simulation_file: input/EDSP_m9_r40.sim.yaml
+array_file: input/EDSP_m9_r40.array.yaml
+array_dsp_file: input/EDSP_m9_r40.dsp.yaml
+sound_sources_file: input/EDSP_m9_r40.source.yaml
+
+# Project output files
+srp_output_file: output/srp.csv
+delay_table_file: output/mainarray_delaytable.csv
+subarray_delay_table_files:
+  - output/subarray_1_delaytable.csv
+viewing_angles_file: output/viewangles.csv
+sound_sources_generated_file: output/soundsources.csv
+simulation_type: RESPONSE
+metrics_requested: false
+
+# Simulation information
+speed_of_sound: 346.899994  # (m/s)
+computation_time: 1139  # (seconds)
+cpu_cores:
+  - CPU_NAME_0=Intel(R) Core(TM) i5-7600 CPU @ 3.50GHz
+  - CPU_NAME_1=Intel(R) Core(TM) i5-7600 CPU @ 3.50GHz
+ram_amount: 8105800  # (kB)
+simulator_version: 1.5.2.0
+simulator_code_name: Beamformer 12 May 2020
+simulator_build_date: May  4 2023 08:14:27

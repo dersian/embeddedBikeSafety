@@ -1,0 +1,16 @@
+file_type: SOUND_SOURCES_CONFIGURATION
+sources:
+  - id: 1
+    type: MULTI_SINE
+    amplitude: 1
+    is_fixed_frequency: false
+    frequency:
+      start: 0
+      step: 25
+      stop: 20000
+    is_distribution: false
+    position: [-2,0,0]
+#    position_distribution: 
+#      method: "EqualPolarDistribution"
+#      parameters: "0:42.1875:16:5"
+      # take advantage of a symmetry of 8 times in the array, with 16, 12 corresponds to 75%

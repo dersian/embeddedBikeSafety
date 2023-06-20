@@ -1,0 +1,21 @@
+file_type: SOUND_SOURCES_CONFIGURATION
+sources:
+  - id: 0
+    type: MULTI_SINE
+    amplitude: 1
+    position: [0, 3, 0]
+    is_fixed_frequency: false
+    frequency:
+      start: 25
+      step: 25
+      stop: 20000
+    is_distribution: false
+    distribution_method: POLAR
+    distance: 1
+    distribution:
+      start_azimuth: 0
+      step_azimuth: 2
+      stop_azimuth: 0
+      start_elevation: 0
+      step_elevation: 2
+      stop_elevation: 0

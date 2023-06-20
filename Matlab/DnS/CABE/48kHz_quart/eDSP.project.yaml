@@ -1,0 +1,45 @@
+file_type: OUTPUT_PROJECT
+
+# Project name
+project_name: eDSP
+
+# Project input files
+simulation_file: input/eDSP_quarter.yaml
+array_file: input/eDSP_quarter.array.yaml
+array_dsp_file: input/eDSP.dsp.yaml
+sound_sources_file: input/eDSP.source.yaml
+
+# Project output files
+srp_output_file: output/srp.csv
+delay_table_file: output/mainarray_delaytable.csv
+subarray_delay_table_files:
+  - output/subarray_1_delaytable.csv
+viewing_angles_file: output/viewangles.csv
+sound_sources_generated_file: output/soundsources.csv
+simulation_type: RESPONSE
+metrics_requested: true
+
+# Computed metrics
+beamwidth_file: metrics/beamwidth.csv
+directivity_file: metrics/directivity.csv
+focalindex_file: metrics/focalindex.csv
+integratedsidelobelevel_file: metrics/integratedsidelobelevel.csv
+peaksidelobelevel_file: metrics/peaksidelobelevel.csv
+
+# Computed metrics statistics
+
+
+# Simulation information
+speed_of_sound: 346.899994  # (m/s)
+computation_time: 603  # (seconds)
+cpu_cores:
+  - CPU_NAME_0=Intel(R) Core(TM) i5-9600KF CPU @ 3.70GHz
+  - CPU_NAME_1=Intel(R) Core(TM) i5-9600KF CPU @ 3.70GHz
+  - CPU_NAME_2=Intel(R) Core(TM) i5-9600KF CPU @ 3.70GHz
+  - CPU_NAME_3=Intel(R) Core(TM) i5-9600KF CPU @ 3.70GHz
+  - CPU_NAME_4=Intel(R) Core(TM) i5-9600KF CPU @ 3.70GHz
+  - CPU_NAME_5=Intel(R) Core(TM) i5-9600KF CPU @ 3.70GHz
+ram_amount: 65794552  # (kB)
+simulator_version: 1.5.2.0
+simulator_code_name: Beamformer 12 May 2020
+simulator_build_date: Apr 20 2023 12:12:21

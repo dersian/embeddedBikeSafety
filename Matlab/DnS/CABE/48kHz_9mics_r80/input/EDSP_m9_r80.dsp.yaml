@@ -1,0 +1,12 @@
+file_type: DSP_CONFIGURATION
+beamforming_method: Filter_DelayAndSum
+viewangles_method: EqualPolarDistribution
+viewangles_parameters: 0:360:360:1
+fractional_delays: false
+fractional_delays_bitwidth: 10
+cic_filtering_stages: CIC_FIR_3072kHz_CIC32_FIR2
+decimation_fixed_point: false
+filtering_coefficient_bitwidth: 32
+filtering_data_bitwidth: 18
+psrp_blockmode: false
+psrp_length: 1024

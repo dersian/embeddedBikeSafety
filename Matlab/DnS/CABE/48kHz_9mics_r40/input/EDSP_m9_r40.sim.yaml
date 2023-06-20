@@ -1,0 +1,14 @@
+file_type: SIMULATION_CONFIGURATION
+project_name: EDSP_m9_r40
+simulation_type: RESPONSE
+sound_sources_file: EDSP_m9_r40.source.yaml
+array_file: EDSP_m9_r40.array.yaml
+array_dsp_file: EDSP_m9_r40.dsp.yaml
+simulation:
+  start_time:
+    days: 0
+    seconds: 0
+  end_time:
+    days: 0
+    seconds: 0.10000000000000001
+metrics_requested: false
