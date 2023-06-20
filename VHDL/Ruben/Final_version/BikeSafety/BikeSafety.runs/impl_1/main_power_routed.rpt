@@ -1,0 +1,263 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
+| Date             : Tue Jun 20 23:24:39 2023
+| Host             : indi-VM running 64-bit Ubuntu 20.04.1 LTS
+| Command          : report_power -file main_power_routed.rpt -pb main_power_summary_routed.pb -rpx main_power_routed.rpx
+| Design           : main
+| Device           : xc7z020clg484-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+-----------------------------------+
+| Total On-Chip Power (W)  | 361.016 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                      |
+| Power Budget Margin (W)  | NA                                |
+| Dynamic (W)              | 359.976                           |
+| Device Static (W)        | 1.039                             |
+| Effective TJA (C/W)      | 11.5                              |
+| Max Ambient (C)          | 0.0                               |
+| Junction Temperature (C) | 125.0                             |
+| Confidence Level         | Low                               |
+| Setting File             | ---                               |
+| Simulation Activity File | ---                               |
+| Design Nets Matched      | NA                                |
++--------------------------+-----------------------------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Slice Logic             |    59.835 |    16979 |       --- |             --- |
+|   LUT as Logic          |    40.661 |     4368 |     53200 |            8.21 |
+|   Register              |    11.054 |    11035 |    106400 |           10.37 |
+|   LUT as Shift Register |     4.547 |      288 |     17400 |            1.66 |
+|   CARRY4                |     3.109 |      418 |     13300 |            3.14 |
+|   F7/F8 Muxes           |     0.297 |      192 |     53200 |            0.36 |
+|   BUFG                  |     0.166 |       10 |        32 |           31.25 |
+|   Others                |     0.000 |      222 |       --- |             --- |
+| Signals                 |   122.156 |    15998 |       --- |             --- |
+| DSPs                    |   167.862 |      148 |       220 |           67.27 |
+| I/O                     |    10.123 |       32 |       200 |           16.00 |
+| Static Power            |     1.039 |          |           |                 |
+| Total                   |   361.016 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint    |       1.000 |   350.188 |     349.889 |      0.299 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.926 |       0.826 |      0.100 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     4.779 |       4.778 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.026 |       0.000 |      0.026 |       NA    | Unspecified | NA         |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccpint   |       1.000 |     0.473 |       0.000 |      0.473 |       NA    | Unspecified | NA         |
+| Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |       NA    | Unspecified | NA         |
+| Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |       NA    | Unspecified | NA         |
+| Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco_mio0 |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco_mio1 |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+------------------------+
+| Ambient Temp (C)      | 25.0                   |
+| ThetaJA (C/W)         | 11.5                   |
+| Airflow (LFM)         | 250                    |
+| Heat Sink             | none                   |
+| ThetaSA (C/W)         | 0.0                    |
+| Board Selection       | medium (10"x10")       |
+| # of Board Layers     | 8to11 (8 to 11 Layers) |
+| Board Temperature (C) | 25.0                   |
++-----------------------+------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-----------------------------+-----------+
+| Name                        | Power (W) |
++-----------------------------+-----------+
+| main                        |   359.976 |
+|   DaS_p                     |    64.106 |
+|   FiltersGenerate[0].Fil_p  |    32.107 |
+|     CIC_p                   |     3.466 |
+|       CICc0_p               |     0.608 |
+|       CICi0_p               |     0.478 |
+|       MemGenerate[1].CICc_p |     0.578 |
+|       MemGenerate[1].CICi_p |     0.268 |
+|       MemGenerate[2].CICc_p |     0.574 |
+|       MemGenerate[2].CICi_p |     0.302 |
+|       MemGenerate[3].CICc_p |     0.356 |
+|       MemGenerate[3].CICi_p |     0.301 |
+|     Halfband11_p            |    10.442 |
+|     Halfband19_p            |    18.199 |
+|   FiltersGenerate[1].Fil_p  |    30.899 |
+|     CIC_p                   |     3.491 |
+|       CICc0_p               |     0.584 |
+|       CICi0_p               |     0.480 |
+|       MemGenerate[1].CICc_p |     0.555 |
+|       MemGenerate[1].CICi_p |     0.335 |
+|       MemGenerate[2].CICc_p |     0.544 |
+|       MemGenerate[2].CICi_p |     0.292 |
+|       MemGenerate[3].CICc_p |     0.351 |
+|       MemGenerate[3].CICi_p |     0.349 |
+|     Halfband11_p            |    10.245 |
+|     Halfband19_p            |    17.162 |
+|   FiltersGenerate[2].Fil_p  |    31.099 |
+|     CIC_p                   |     3.528 |
+|       CICc0_p               |     0.570 |
+|       CICi0_p               |     0.461 |
+|       MemGenerate[1].CICc_p |     0.614 |
+|       MemGenerate[1].CICi_p |     0.282 |
+|       MemGenerate[2].CICc_p |     0.592 |
+|       MemGenerate[2].CICi_p |     0.344 |
+|       MemGenerate[3].CICc_p |     0.329 |
+|       MemGenerate[3].CICi_p |     0.336 |
+|     Halfband11_p            |    10.261 |
+|     Halfband19_p            |    17.310 |
+|   FiltersGenerate[3].Fil_p  |    31.561 |
+|     CIC_p                   |     3.514 |
+|       CICc0_p               |     0.576 |
+|       CICi0_p               |     0.463 |
+|       MemGenerate[1].CICc_p |     0.614 |
+|       MemGenerate[1].CICi_p |     0.310 |
+|       MemGenerate[2].CICc_p |     0.591 |
+|       MemGenerate[2].CICi_p |     0.284 |
+|       MemGenerate[3].CICc_p |     0.345 |
+|       MemGenerate[3].CICi_p |     0.332 |
+|     Halfband11_p            |    10.335 |
+|     Halfband19_p            |    17.712 |
+|   FiltersGenerate[4].Fil_p  |    31.135 |
+|     CIC_p                   |     3.624 |
+|       CICc0_p               |     0.610 |
+|       CICi0_p               |     0.462 |
+|       MemGenerate[1].CICc_p |     0.582 |
+|       MemGenerate[1].CICi_p |     0.357 |
+|       MemGenerate[2].CICc_p |     0.586 |
+|       MemGenerate[2].CICi_p |     0.348 |
+|       MemGenerate[3].CICc_p |     0.360 |
+|       MemGenerate[3].CICi_p |     0.319 |
+|     Halfband11_p            |    10.386 |
+|     Halfband19_p            |    17.125 |
+|   FiltersGenerate[5].Fil_p  |    31.250 |
+|     CIC_p                   |     3.605 |
+|       CICc0_p               |     0.554 |
+|       CICi0_p               |     0.462 |
+|       MemGenerate[1].CICc_p |     0.556 |
+|       MemGenerate[1].CICi_p |     0.352 |
+|       MemGenerate[2].CICc_p |     0.587 |
+|       MemGenerate[2].CICi_p |     0.337 |
+|       MemGenerate[3].CICc_p |     0.375 |
+|       MemGenerate[3].CICi_p |     0.382 |
+|     Halfband11_p            |    10.290 |
+|     Halfband19_p            |    17.355 |
+|   FiltersGenerate[6].Fil_p  |    31.138 |
+|     CIC_p                   |     3.544 |
+|       CICc0_p               |     0.585 |
+|       CICi0_p               |     0.463 |
+|       MemGenerate[1].CICc_p |     0.600 |
+|       MemGenerate[1].CICi_p |     0.310 |
+|       MemGenerate[2].CICc_p |     0.583 |
+|       MemGenerate[2].CICi_p |     0.345 |
+|       MemGenerate[3].CICc_p |     0.330 |
+|       MemGenerate[3].CICi_p |     0.328 |
+|     Halfband11_p            |    10.345 |
+|     Halfband19_p            |    17.249 |
+|   FiltersGenerate[7].Fil_p  |    31.558 |
+|     CIC_p                   |     3.490 |
+|       CICc0_p               |     0.571 |
+|       CICi0_p               |     0.459 |
+|       MemGenerate[1].CICc_p |     0.578 |
+|       MemGenerate[1].CICi_p |     0.280 |
+|       MemGenerate[2].CICc_p |     0.573 |
+|       MemGenerate[2].CICi_p |     0.324 |
+|       MemGenerate[3].CICc_p |     0.363 |
+|       MemGenerate[3].CICi_p |     0.342 |
+|     Halfband11_p            |    10.769 |
+|     Halfband19_p            |    17.299 |
+|   FiltersGenerate[8].Fil_p  |    31.408 |
+|     CIC_p                   |     3.646 |
+|       CICc0_p               |     0.602 |
+|       CICi0_p               |     0.463 |
+|       MemGenerate[1].CICc_p |     0.651 |
+|       MemGenerate[1].CICi_p |     0.309 |
+|       MemGenerate[2].CICc_p |     0.557 |
+|       MemGenerate[2].CICi_p |     0.366 |
+|       MemGenerate[3].CICc_p |     0.349 |
+|       MemGenerate[3].CICi_p |     0.350 |
+|     Halfband11_p            |    10.555 |
+|     Halfband19_p            |    17.206 |
++-----------------------------+-----------+
+
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Jun 20 23:23:22 2023
+# Process ID: 8903
+# Current directory: /home/indi/Documents/EDSP/BikeSafety/BikeSafety.runs/impl_1
+# Command line: vivado -log main.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source main.tcl -notrace
+# Log file: /home/indi/Documents/EDSP/BikeSafety/BikeSafety.runs/impl_1/main.vdi
+# Journal file: /home/indi/Documents/EDSP/BikeSafety/BikeSafety.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace
