@@ -1,31 +1,33 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.5",
-   "Default View_TopLeft":"-271,-71",
+   "Default View_ScaleFactor":"1.27297",
+   "Default View_TopLeft":"-86,-104",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
 #  -string -flagsOSRD
-preplace port FIXED_IO -pg 1 -lvl 3 -x 720 -y 80 -defaultsOSRD
-preplace port DDR -pg 1 -lvl 3 -x 720 -y 60 -defaultsOSRD
-preplace port port-id_o_mic_clk -pg 1 -lvl 3 -x 720 -y 470 -defaultsOSRD
-preplace port port-id_i_mic -pg 1 -lvl 0 -x 0 -y 410 -defaultsOSRD
-preplace inst ila_0 -pg 1 -lvl 2 -x 590 -y 400 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1320 -y 80 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 1320 -y 60 -defaultsOSRD
+preplace port port-id_o_mic_clk -pg 1 -lvl 5 -x 1320 -y 280 -defaultsOSRD
+preplace port port-id_i_mic -pg 1 -lvl 0 -x 0 -y 440 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 4 -x 1200 -y 390 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 1 -x 250 -y 160 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 590 -y 270 -defaultsOSRD
-preplace inst mic_test_0 -pg 1 -lvl 1 -x 250 -y 400 -defaultsOSRD
-preplace netloc clk_wiz_0_clk_out1 1 0 3 20 330 NJ 330 690
-preplace netloc i_mic_0_1 1 0 1 N 410
-preplace netloc mic_test_0_o_mic 1 1 1 N 410
-preplace netloc mic_test_0_o_mic_clk 1 1 2 480 470 NJ
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 2 20 320 490
-preplace netloc processing_system7_0_DDR 1 1 2 N 60 NJ
-preplace netloc processing_system7_0_FIXED_IO 1 1 2 N 80 NJ
-levelinfo -pg 1 0 250 590 720
-pagesize -pg 1 -db -bbox -sgen -90 0 840 490
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 250 -y 380 -defaultsOSRD
+preplace inst ClockDivider_0 -pg 1 -lvl 2 -x 630 -y 380 -defaultsOSRD
+preplace inst DelayInput -pg 1 -lvl 3 -x 920 -y 420 -defaultsOSRD
+preplace netloc ClockDivider_0_o_PDM_clk 1 2 3 770 330 1080 280 N
+preplace netloc DelayInput_o_mic 1 3 1 1070 370n
+preplace netloc DelayInput_o_sample_valid 1 3 1 1090 390n
+preplace netloc clk_wiz_0_clk_out1 1 1 1 N 380
+preplace netloc i_mic_0_1 1 0 4 N 440 N 440 760 500 1100
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 20 10 490 230 760 340 1070
+preplace netloc processing_system7_0_DDR 1 1 4 480 60 NJ 60 N 60 N
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 500 80 NJ 80 N 80 N
+levelinfo -pg 1 0 250 630 920 1200 1320
+pagesize -pg 1 -db -bbox -sgen -90 0 1440 510
 "
 }
 {
    "da_board_cnt":"1",
-   "da_clkrst_cnt":"2",
+   "da_clkrst_cnt":"4",
    "da_ps7_cnt":"3"
 }

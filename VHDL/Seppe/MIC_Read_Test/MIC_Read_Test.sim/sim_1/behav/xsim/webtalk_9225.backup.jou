@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Jun 16 10:51:32 2023
+# Process ID: 9225
+# Current directory: /home/indi/Documents/EDSP/MIC_Read_Test/MIC_Read_Test.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/indi/Documents/EDSP/MIC_Read_Test/MIC_Read_Test.sim/sim_1/behav/xsim/xsim.dir/design_1_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/indi/Documents/EDSP/MIC_Read_Test/MIC_Read_Test.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/indi/Documents/EDSP/MIC_Read_Test/MIC_Read_Test.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/indi/Documents/EDSP/MIC_Read_Test/MIC_Read_Test.sim/sim_1/behav/xsim/xsim.dir/design_1_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace

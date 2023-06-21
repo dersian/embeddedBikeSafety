@@ -1,0 +1,41 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.611323",
+   "Default View_TopLeft":"-155,-337",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 9 -x 2610 -y 260 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 9 -x 2610 -y 280 -defaultsOSRD
+preplace portBus PDM_data -pg 1 -lvl 0 -x 0 -y 300 -defaultsOSRD
+preplace inst cic_compiler_0 -pg 1 -lvl 5 -x 1330 -y 130 -defaultsOSRD
+preplace inst fir_compiler_0 -pg 1 -lvl 6 -x 1680 -y 120 -defaultsOSRD
+preplace inst fir_compiler_1 -pg 1 -lvl 7 -x 1980 -y 130 -defaultsOSRD
+preplace inst fir_compiler_2 -pg 1 -lvl 8 -x 2360 -y 140 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 8 -x 2360 -y 360 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 120 -y 100 -defaultsOSRD
+preplace inst PDMDelay_ValidCounter -pg 1 -lvl 3 -x 680 -y 100 -defaultsOSRD
+preplace inst ClockDivider_PDM_PCM -pg 1 -lvl 2 -x 380 -y 100 -defaultsOSRD
+preplace inst Data2AXI_0 -pg 1 -lvl 4 -x 970 -y 90 -defaultsOSRD
+preplace inst DaS_0 -pg 1 -lvl 2 -x 380 -y 220 -defaultsOSRD
+preplace netloc ClockDivider_0_o_PDM_clk 1 2 1 NJ 100
+preplace netloc clk_wiz_0_clk_out1 1 1 1 NJ 100
+preplace netloc processing_system7_0_FCLK_CLK1 1 0 9 20 40 NJ 40 530 20 830 10 1120 20 1530 190 1830 200 2130 520 2590
+preplace netloc PDM_data_1 1 0 3 NJ 300 NJ 300 530J
+preplace netloc PDMDelay_ValidCounter_o_mic 1 3 1 N 90
+preplace netloc Data2AXI_0_data_out 1 4 1 N 100
+preplace netloc Data2AXI_0_valid 1 4 1 1110 80n
+preplace netloc cic_compiler_0_s_axis_data_tready 1 3 2 830 170 1130J
+preplace netloc cic_compiler_0_M_AXIS_DATA 1 5 1 N 110
+preplace netloc fir_compiler_0_M_AXIS_DATA 1 6 1 N 120
+preplace netloc fir_compiler_1_M_AXIS_DATA 1 7 1 N 130
+preplace netloc processing_system7_0_DDR 1 8 1 NJ 260
+preplace netloc processing_system7_0_FIXED_IO 1 8 1 NJ 280
+levelinfo -pg 1 0 120 380 680 970 1330 1680 1980 2360 2610
+pagesize -pg 1 -db -bbox -sgen -160 0 2730 530
+"
+}
+{
+   "da_clkrst_cnt":"1",
+   "da_ps7_cnt":"2"
+}

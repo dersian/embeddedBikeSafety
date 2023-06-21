@@ -55,10 +55,11 @@ USE ieee.numeric_std.ALL;
 
 ENTITY design_1_mic_test_0_0 IS
   PORT (
-    i_FPGAclk : IN STD_LOGIC;
+    i_FPGA_clk : IN STD_LOGIC;
+    i_PDM_clk : IN STD_LOGIC;
     i_mic : IN STD_LOGIC;
-    o_mic_clk : OUT STD_LOGIC;
-    o_mic : OUT STD_LOGIC
+    o_mic : OUT STD_LOGIC;
+    o_sample_valid : OUT STD_LOGIC
   );
 END design_1_mic_test_0_0;
 
@@ -67,24 +68,28 @@ ARCHITECTURE design_1_mic_test_0_0_arch OF design_1_mic_test_0_0 IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF design_1_mic_test_0_0_arch: ARCHITECTURE IS "yes";
   COMPONENT mic_test IS
     PORT (
-      i_FPGAclk : IN STD_LOGIC;
+      i_FPGA_clk : IN STD_LOGIC;
+      i_PDM_clk : IN STD_LOGIC;
       i_mic : IN STD_LOGIC;
-      o_mic_clk : OUT STD_LOGIC;
-      o_mic : OUT STD_LOGIC
+      o_mic : OUT STD_LOGIC;
+      o_sample_valid : OUT STD_LOGIC
     );
   END COMPONENT mic_test;
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF design_1_mic_test_0_0_arch: ARCHITECTURE IS "module_ref";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
-  ATTRIBUTE X_INTERFACE_PARAMETER OF o_mic_clk: SIGNAL IS "XIL_INTERFACENAME o_mic_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_mic_test_0_0_o_mic_clk, INSERT_VIP 0";
-  ATTRIBUTE X_INTERFACE_INFO OF o_mic_clk: SIGNAL IS "xilinx.com:signal:clock:1.0 o_mic_clk CLK";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF i_PDM_clk: SIGNAL IS "XIL_INTERFACENAME i_PDM_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_ClockDivider_0_0_o_PDM_clk, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_INFO OF i_PDM_clk: SIGNAL IS "xilinx.com:signal:clock:1.0 i_PDM_clk CLK";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF i_FPGA_clk: SIGNAL IS "XIL_INTERFACENAME i_FPGA_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_INFO OF i_FPGA_clk: SIGNAL IS "xilinx.com:signal:clock:1.0 i_FPGA_clk CLK";
 BEGIN
   U0 : mic_test
     PORT MAP (
-      i_FPGAclk => i_FPGAclk,
+      i_FPGA_clk => i_FPGA_clk,
+      i_PDM_clk => i_PDM_clk,
       i_mic => i_mic,
-      o_mic_clk => o_mic_clk,
-      o_mic => o_mic
+      o_mic => o_mic,
+      o_sample_valid => o_sample_valid
     );
 END design_1_mic_test_0_0_arch;

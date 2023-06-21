@@ -1,7 +1,7 @@
 --Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
---Date        : Wed Jun 14 17:18:42 2023
+--Date        : Mon Jun 19 15:03:14 2023
 --Host        : indi-VM running 64-bit Ubuntu 20.04.1 LTS
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -38,7 +38,7 @@ entity design_1 is
     o_mic_clk : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=4,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_board_cnt=1,da_clkrst_cnt=2,da_ps7_cnt=3,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=5,numReposBlks=5,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=2,numPkgbdBlks=0,bdsource=USER,da_board_cnt=1,da_clkrst_cnt=4,da_ps7_cnt=3,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
@@ -47,7 +47,10 @@ architecture STRUCTURE of design_1 is
   component design_1_ila_0_0 is
   port (
     clk : in STD_LOGIC;
-    probe0 : in STD_LOGIC_VECTOR ( 0 to 0 )
+    probe0 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe1 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe2 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe3 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component design_1_ila_0_0;
   component design_1_processing_system7_0_0 is
@@ -149,7 +152,6 @@ architecture STRUCTURE of design_1 is
     S_AXI_HP0_WDATA : in STD_LOGIC_VECTOR ( 63 downto 0 );
     S_AXI_HP0_WSTRB : in STD_LOGIC_VECTOR ( 7 downto 0 );
     FCLK_CLK0 : out STD_LOGIC;
-    FCLK_CLK1 : out STD_LOGIC;
     FCLK_RESET0_N : out STD_LOGIC;
     MIO : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     DDR_CAS_n : inout STD_LOGIC;
@@ -180,18 +182,26 @@ architecture STRUCTURE of design_1 is
     clk_out1 : out STD_LOGIC
   );
   end component design_1_clk_wiz_0_1;
+  component design_1_ClockDivider_0_0 is
+  port (
+    i_FPGA_clk : in STD_LOGIC;
+    o_PDM_clk : out STD_LOGIC
+  );
+  end component design_1_ClockDivider_0_0;
   component design_1_mic_test_0_0 is
   port (
-    i_FPGAclk : in STD_LOGIC;
+    i_FPGA_clk : in STD_LOGIC;
+    i_PDM_clk : in STD_LOGIC;
     i_mic : in STD_LOGIC;
-    o_mic_clk : out STD_LOGIC;
-    o_mic : out STD_LOGIC
+    o_mic : out STD_LOGIC;
+    o_sample_valid : out STD_LOGIC
   );
   end component design_1_mic_test_0_0;
+  signal ClockDivider_0_o_PDM_clk : STD_LOGIC;
+  signal DelayInput_o_mic : STD_LOGIC;
+  signal DelayInput_o_sample_valid : STD_LOGIC;
   signal clk_wiz_0_clk_out1 : STD_LOGIC;
   signal i_mic_0_1 : STD_LOGIC;
-  signal mic_test_0_o_mic : STD_LOGIC;
-  signal mic_test_0_o_mic_clk : STD_LOGIC;
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -214,7 +224,6 @@ architecture STRUCTURE of design_1 is
   signal processing_system7_0_FIXED_IO_PS_CLK : STD_LOGIC;
   signal processing_system7_0_FIXED_IO_PS_PORB : STD_LOGIC;
   signal processing_system7_0_FIXED_IO_PS_SRSTB : STD_LOGIC;
-  signal NLW_processing_system7_0_FCLK_CLK1_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_FCLK_RESET0_N_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_I2C0_SCL_O_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_I2C0_SCL_T_UNCONNECTED : STD_LOGIC;
@@ -285,7 +294,7 @@ architecture STRUCTURE of design_1 is
   attribute X_INTERFACE_INFO of FIXED_IO_ps_porb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB";
   attribute X_INTERFACE_INFO of FIXED_IO_ps_srstb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB";
   attribute X_INTERFACE_INFO of o_mic_clk : signal is "xilinx.com:signal:clock:1.0 CLK.O_MIC_CLK CLK";
-  attribute X_INTERFACE_PARAMETER of o_mic_clk : signal is "XIL_INTERFACENAME CLK.O_MIC_CLK, CLK_DOMAIN design_1_mic_test_0_0_o_mic_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0";
+  attribute X_INTERFACE_PARAMETER of o_mic_clk : signal is "XIL_INTERFACENAME CLK.O_MIC_CLK, CLK_DOMAIN design_1_ClockDivider_0_0_o_PDM_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0";
   attribute X_INTERFACE_INFO of DDR_addr : signal is "xilinx.com:interface:ddrx:1.0 DDR ADDR";
   attribute X_INTERFACE_PARAMETER of DDR_addr : signal is "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250";
   attribute X_INTERFACE_INFO of DDR_ba : signal is "xilinx.com:interface:ddrx:1.0 DDR BA";
@@ -296,7 +305,20 @@ architecture STRUCTURE of design_1 is
   attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
 begin
   i_mic_0_1 <= i_mic;
-  o_mic_clk <= mic_test_0_o_mic_clk;
+  o_mic_clk <= ClockDivider_0_o_PDM_clk;
+ClockDivider_0: component design_1_ClockDivider_0_0
+     port map (
+      i_FPGA_clk => clk_wiz_0_clk_out1,
+      o_PDM_clk => ClockDivider_0_o_PDM_clk
+    );
+DelayInput: component design_1_mic_test_0_0
+     port map (
+      i_FPGA_clk => processing_system7_0_FCLK_CLK0,
+      i_PDM_clk => ClockDivider_0_o_PDM_clk,
+      i_mic => i_mic_0_1,
+      o_mic => DelayInput_o_mic,
+      o_sample_valid => DelayInput_o_sample_valid
+    );
 clk_wiz_0: component design_1_clk_wiz_0_1
      port map (
       clk_in1 => processing_system7_0_FCLK_CLK0,
@@ -305,14 +327,10 @@ clk_wiz_0: component design_1_clk_wiz_0_1
 ila_0: component design_1_ila_0_0
      port map (
       clk => processing_system7_0_FCLK_CLK0,
-      probe0(0) => mic_test_0_o_mic
-    );
-mic_test_0: component design_1_mic_test_0_0
-     port map (
-      i_FPGAclk => clk_wiz_0_clk_out1,
-      i_mic => i_mic_0_1,
-      o_mic => mic_test_0_o_mic,
-      o_mic_clk => mic_test_0_o_mic_clk
+      probe0(0) => DelayInput_o_mic,
+      probe1(0) => DelayInput_o_sample_valid,
+      probe2(0) => ClockDivider_0_o_PDM_clk,
+      probe3(0) => i_mic_0_1
     );
 processing_system7_0: component design_1_processing_system7_0_0
      port map (
@@ -334,7 +352,6 @@ processing_system7_0: component design_1_processing_system7_0_0
       DDR_VRP => FIXED_IO_ddr_vrp,
       DDR_WEB => DDR_we_n,
       FCLK_CLK0 => processing_system7_0_FCLK_CLK0,
-      FCLK_CLK1 => NLW_processing_system7_0_FCLK_CLK1_UNCONNECTED,
       FCLK_RESET0_N => NLW_processing_system7_0_FCLK_RESET0_N_UNCONNECTED,
       I2C0_SCL_I => '0',
       I2C0_SCL_O => NLW_processing_system7_0_I2C0_SCL_O_UNCONNECTED,

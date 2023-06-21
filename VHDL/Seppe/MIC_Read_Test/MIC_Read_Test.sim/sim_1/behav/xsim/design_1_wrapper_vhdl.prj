@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../MIC_Read_Test.srcs/sources_1/new/MIC_Read.vhd" \
+"../../../../MIC_Read_Test.srcs/sources_1/new/ClockDivider.vhd" \
+"../../../../MIC_Read_Test.ip_user_files/bd/design_1/ip/design_1_ila_0_0/sim/design_1_ila_0_0.vhd" \
+"../../../../MIC_Read_Test.ip_user_files/bd/design_1/ip/design_1_mic_test_0_0/sim/design_1_mic_test_0_0.vhd" \
+"../../../../MIC_Read_Test.ip_user_files/bd/design_1/ip/design_1_ClockDivider_0_0/sim/design_1_ClockDivider_0_0.vhd" \
+"../../../../MIC_Read_Test.ip_user_files/bd/design_1/sim/design_1.vhd" \
+"../../../../MIC_Read_Test.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

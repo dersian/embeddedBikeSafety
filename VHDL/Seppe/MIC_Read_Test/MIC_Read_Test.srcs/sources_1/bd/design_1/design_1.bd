@@ -14,7 +14,8 @@
       "ila_0": "",
       "processing_system7_0": "",
       "clk_wiz_0": "",
-      "mic_test_0": ""
+      "ClockDivider_0": "",
+      "DelayInput": ""
     },
     "interface_ports": {
       "FIXED_IO": {
@@ -90,7 +91,7 @@
         "direction": "O",
         "parameters": {
           "CLK_DOMAIN": {
-            "value": "design_1_mic_test_0_0_o_mic_clk",
+            "value": "design_1_ClockDivider_0_0_o_PDM_clk",
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
@@ -122,17 +123,38 @@
         "xci_path": "ip/design_1_ila_0_0/design_1_ila_0_0.xci",
         "inst_hier_path": "ila_0",
         "parameters": {
+          "ALL_PROBE_SAME_MU_CNT": {
+            "value": "2"
+          },
           "C_DATA_DEPTH": {
             "value": "131072"
           },
           "C_ENABLE_ILA_AXI_MON": {
             "value": "false"
           },
+          "C_EN_STRG_QUAL": {
+            "value": "1"
+          },
           "C_MONITOR_TYPE": {
             "value": "Native"
           },
           "C_NUM_OF_PROBES": {
-            "value": "1"
+            "value": "4"
+          },
+          "C_PROBE0_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE1_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE2_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE3_MU_CNT": {
+            "value": "2"
+          },
+          "C_TRIGIN_EN": {
+            "value": "false"
           }
         }
       },
@@ -161,7 +183,7 @@
             "value": "100.000000"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
-            "value": "50.000000"
+            "value": "10.000000"
           },
           "PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -236,7 +258,7 @@
             "value": "100000000"
           },
           "PCW_CLK1_FREQ": {
-            "value": "50000000"
+            "value": "10000000"
           },
           "PCW_CLK2_FREQ": {
             "value": "10000000"
@@ -302,7 +324,7 @@
             "value": "1"
           },
           "PCW_EN_CLK1_PORT": {
-            "value": "1"
+            "value": "0"
           },
           "PCW_EN_CLK2_PORT": {
             "value": "0"
@@ -368,7 +390,7 @@
             "value": "IO PLL"
           },
           "PCW_FCLK1_PERIPHERAL_CLKSRC": {
-            "value": "IO PLL"
+            "value": "DDR PLL"
           },
           "PCW_FCLK2_PERIPHERAL_CLKSRC": {
             "value": "IO PLL"
@@ -379,14 +401,11 @@
           "PCW_FCLK_CLK0_BUF": {
             "value": "TRUE"
           },
-          "PCW_FCLK_CLK1_BUF": {
-            "value": "TRUE"
-          },
           "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
             "value": "100"
           },
           "PCW_FPGA1_PERIPHERAL_FREQMHZ": {
-            "value": "50"
+            "value": "2.3041"
           },
           "PCW_FPGA2_PERIPHERAL_FREQMHZ": {
             "value": "50"
@@ -395,9 +414,6 @@
             "value": "50"
           },
           "PCW_FPGA_FCLK0_ENABLE": {
-            "value": "1"
-          },
-          "PCW_FPGA_FCLK1_ENABLE": {
             "value": "1"
           },
           "PCW_GPIO_EMIO_GPIO_ENABLE": {
@@ -1328,18 +1344,19 @@
           }
         }
       },
-      "mic_test_0": {
-        "vlnv": "xilinx.com:module_ref:mic_test:1.0",
-        "xci_name": "design_1_mic_test_0_0",
-        "xci_path": "ip/design_1_mic_test_0_0/design_1_mic_test_0_0.xci",
-        "inst_hier_path": "mic_test_0",
+      "ClockDivider_0": {
+        "vlnv": "xilinx.com:module_ref:ClockDivider:1.0",
+        "xci_name": "design_1_ClockDivider_0_0",
+        "xci_path": "ip/design_1_ClockDivider_0_0/design_1_ClockDivider_0_0.xci",
+        "inst_hier_path": "ClockDivider_0",
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "mic_test",
+          "ref_name": "ClockDivider",
           "boundary_crc": "0x0"
         },
         "ports": {
-          "i_FPGAclk": {
+          "i_FPGA_clk": {
+            "type": "clk",
             "direction": "I",
             "parameters": {
               "FREQ_HZ": {
@@ -1356,14 +1373,54 @@
               }
             }
           },
+          "o_PDM_clk": {
+            "type": "clk",
+            "direction": "O"
+          }
+        }
+      },
+      "DelayInput": {
+        "vlnv": "xilinx.com:module_ref:mic_test:1.0",
+        "xci_name": "design_1_mic_test_0_0",
+        "xci_path": "ip/design_1_mic_test_0_0/design_1_mic_test_0_0.xci",
+        "inst_hier_path": "DelayInput",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mic_test",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_FPGA_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "i_PDM_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "design_1_ClockDivider_0_0_o_PDM_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
           "i_mic": {
             "direction": "I"
           },
-          "o_mic_clk": {
-            "type": "clk",
+          "o_mic": {
             "direction": "O"
           },
-          "o_mic": {
+          "o_sample_valid": {
             "direction": "O"
           }
         }
@@ -1384,37 +1441,47 @@
       }
     },
     "nets": {
+      "ClockDivider_0_o_PDM_clk": {
+        "ports": [
+          "ClockDivider_0/o_PDM_clk",
+          "o_mic_clk",
+          "ila_0/probe2",
+          "DelayInput/i_PDM_clk"
+        ]
+      },
+      "DelayInput_o_mic": {
+        "ports": [
+          "DelayInput/o_mic",
+          "ila_0/probe0"
+        ]
+      },
+      "DelayInput_o_sample_valid": {
+        "ports": [
+          "DelayInput/o_sample_valid",
+          "ila_0/probe1"
+        ]
+      },
       "clk_wiz_0_clk_out1": {
         "ports": [
           "clk_wiz_0/clk_out1",
-          "mic_test_0/i_FPGAclk"
+          "ClockDivider_0/i_FPGA_clk"
         ]
       },
       "i_mic_0_1": {
         "ports": [
           "i_mic",
-          "mic_test_0/i_mic"
-        ]
-      },
-      "mic_test_0_o_mic": {
-        "ports": [
-          "mic_test_0/o_mic",
-          "ila_0/probe0"
-        ]
-      },
-      "mic_test_0_o_mic_clk": {
-        "ports": [
-          "mic_test_0/o_mic_clk",
-          "o_mic_clk"
+          "DelayInput/i_mic",
+          "ila_0/probe3"
         ]
       },
       "processing_system7_0_FCLK_CLK0": {
         "ports": [
           "processing_system7_0/FCLK_CLK0",
-          "clk_wiz_0/clk_in1",
           "processing_system7_0/M_AXI_GP0_ACLK",
           "processing_system7_0/S_AXI_HP0_ACLK",
-          "ila_0/clk"
+          "clk_wiz_0/clk_in1",
+          "ila_0/clk",
+          "DelayInput/i_FPGA_clk"
         ]
       }
     }
