@@ -1,0 +1,8 @@
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 98709c768c1244c786fe7426107a724c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot main_tb_behav xil_defaultlib.main_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value -1 is out of target constraint range 0 to 2147483647 [/home/indi/Documents/EDSP/BikeSafety/BikeSafety.srcs/sources_1/old/common.vhd:66]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

@@ -1,0 +1,119 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
+| Date         : Tue Jun 20 23:24:07 2023
+| Host         : indi-VM running 64-bit Ubuntu 20.04.1 LTS
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    41 |
+|    Minimum number of control sets                        |    41 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    85 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    41 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     8 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     2 |
+| >= 16              |    30 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            9815 |         2290 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              37 |           15 |
+| Yes          | No                    | No                     |            1156 |          397 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              27 |            8 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------+--------------------------------+--------------------------------+------------------+----------------+--------------+
+|           Clock Signal           |          Enable Signal         |        Set/Reset Signal        | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------+--------------------------------+--------------------------------+------------------+----------------+--------------+
+|  FPGA_clk_BUFG                   | HB11_mi_ADD2in1index           | HB11add2cyclestarted1          |                2 |              4 |         2.00 |
+|  FPGA_clk_BUFG                   | DaS_p/angleindex[0][3]_i_1_n_0 | DaS_p/ADD1cyclestarted0        |                2 |              4 |         2.00 |
+|  FPGA_clk_BUFG                   |                                | HB19add2cyclestarted1          |                2 |              4 |         2.00 |
+|  FPGA_clk_BUFG                   |                                | PDMclk_counter[3]_i_1_n_0      |                1 |              4 |         4.00 |
+|  FPGA_clk_BUFG                   | HB19_mi_ADD2in1index           | HB19add2cyclestarted1          |                1 |              5 |         5.00 |
+|  FPGA_clk_BUFG                   |                                | HB11add2clk_counter[5]_i_1_n_0 |                2 |              5 |         2.50 |
+|  FPGA_clk_BUFG                   |                                | HB11add2cyclestarted1          |                2 |              5 |         2.50 |
+|  FPGA_clk_BUFG                   |                                | HB19add2clk_counter[5]_i_1_n_0 |                2 |              5 |         2.50 |
+|  FPGA_clk_BUFG                   |                                |                                |                4 |              9 |         2.25 |
+|  FPGA_clk_BUFG                   | DaS_p/ADD1micindex[3]_i_1_n_0  | DaS_p/ADD1cyclestarted0        |                3 |             14 |         4.67 |
+|  FPGA_clk_BUFG                   |                                | DaS_p/ADD1cyclestarted0        |                6 |             14 |         2.33 |
+|  DaSmul2_clk                     | DaS_p/COMP5data_reg[3]0        |                                |                4 |             20 |         5.00 |
+|  DaSmul2_clk                     | DaS_p/COMP5data_reg[2]0        |                                |                5 |             20 |         4.00 |
+|  DaSmul2_clk                     | DaS_p/COMP5data_reg[1]0        |                                |                3 |             20 |         6.67 |
+|  DaSmul2_clk                     | DaS_p/COMP5data_reg[0]0        |                                |                3 |             20 |         6.67 |
+|  FPGA_clk_BUFG                   | DaS_p/angleindex[1][3]_i_1_n_0 |                                |                6 |             22 |         3.67 |
+|  DaS_p/DaScomp7_clk_reg_n_0_BUFG | DaS_p/COMP7data0               |                                |                7 |             30 |         4.29 |
+|  DaSmul2_clk                     | DaS_p/ADD3data_reg[3][4]_259   |                                |               16 |             64 |         4.00 |
+|  DaSmul2_clk                     | DaS_p/ADD3data_reg[3][0]_256   |                                |               16 |             64 |         4.00 |
+|  DaSmul2_clk                     | DaS_p/ADD3data_reg[3][10]_263  |                                |               17 |             64 |         3.76 |
+|  DaSmul2_clk                     | DaS_p/ADD3data_reg[3][11]_250  |                                |               39 |             64 |         1.64 |
+|  DaSmul2_clk                     | DaS_p/ADD3data_reg[3][12]_255  |                                |               19 |             64 |         3.37 |
+|  DaSmul2_clk                     | DaS_p/ADD3data_reg[3][13]_253  |                                |               17 |             64 |         3.76 |
+|  DaSmul2_clk                     | DaS_p/ADD3data_reg[3][14]_264  |                                |               18 |             64 |         3.56 |
+|  DaSmul2_clk                     | DaS_p/ADD3data_reg[3][15]_249  |                                |               45 |             64 |         1.42 |
+|  DaSmul2_clk                     | DaS_p/ADD3data_reg[3][1]_257   |                                |               19 |             64 |         3.37 |
+|  DaSmul2_clk                     | DaS_p/ADD3data_reg[3][2]_258   |                                |               24 |             64 |         2.67 |
+|  DaSmul2_clk                     | DaS_p/ADD3data_reg[3][9]_254   |                                |               21 |             64 |         3.05 |
+|  DaSmul2_clk                     | DaS_p/ADD3data_reg[3][8]_262   |                                |               18 |             64 |         3.56 |
+|  DaSmul2_clk                     | DaS_p/ADD3data_reg[3][7]_251   |                                |               22 |             64 |         2.91 |
+|  DaSmul2_clk                     | DaS_p/ADD3data_reg[3][6]_261   |                                |               13 |             64 |         4.92 |
+|  DaSmul2_clk                     | DaS_p/ADD3data_reg[3][5]_260   |                                |               14 |             64 |         4.57 |
+|  DaSmul2_clk                     | DaS_p/ADD3data_reg[3][3]_252   |                                |               51 |             64 |         1.25 |
+|  DaSmul2_clk                     |                                |                                |               17 |             67 |         3.94 |
+|  ADD1datain2_reg[3][15]_i_2_n_0  |                                |                                |               43 |            128 |         2.98 |
+|  HB11add2_clk_BUFG               |                                |                                |               81 |            288 |         3.56 |
+|  HB19add2_clk_BUFG               |                                |                                |              103 |            288 |         2.80 |
+|  S_clk_reg_n_0_BUFG              |                                |                                |              145 |            580 |         4.00 |
+|  HB19_clk_BUFG                   |                                |                                |              678 |           2738 |         4.04 |
+|  HB11_clk_BUFG                   |                                |                                |              645 |           2980 |         4.62 |
+|  CIC_clk_BUFG                    |                                |                                |              574 |           3313 |         5.77 |
++----------------------------------+--------------------------------+--------------------------------+------------------+----------------+--------------+
+
+
